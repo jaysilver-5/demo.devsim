@@ -1,0 +1,15 @@
+{
+  "name": "devsim",
+  "private": true,
+  "scripts": {
+    "dev:web": "pnpm --filter @devsim/web dev",
+    "dev:api": "pnpm --filter @devsim/api start:dev",
+    "dev": "pnpm run --parallel dev:web dev:api",
+    "build:web": "pnpm --filter @devsim/web build",
+    "build:api": "pnpm --filter @devsim/api build",
+    "lint": "pnpm -r run lint"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
