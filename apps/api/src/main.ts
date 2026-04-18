@@ -18,7 +18,7 @@ async function bootstrap() {
   app.enableCors({
     origin: [
       'http://localhost:3000',
-      'https://your-frontend-domain.up.railway.app',
+      'https://demo.tervlon.com',
     ],
     credentials: true,
   });
